@@ -1,0 +1,7 @@
+.circuit
+R1 2 GND 5 # There can be comment here
+L1 2 GND 0.795
+C1 1 2 0.0318
+V1 1 GND ac 200 
+.end
+.ac V1 1

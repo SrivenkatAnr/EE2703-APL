@@ -1,7 +1,0 @@
-.circuit
-R1 2 3 1e3 # There can be comment here
-L1 3 GND 1e-6
-C1 1 2 1e0
-V1 1 GND ac 5 
-.end
-.ac V1 1000

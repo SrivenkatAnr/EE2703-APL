@@ -20,7 +20,7 @@ if len(sys.argv) >= 5:      #check for invalid commandline inputs
 Nx = 25     #default parameters
 Ny = 25
 radius = 8
-Niter = 1500 
+Niter = 1500
 
 try:        #if no input is given, use the default value itself
     Nx = int(sys.argv[1])
@@ -35,7 +35,7 @@ x = np.arange(int(-1*Nx/2),int(Nx/2)+1)
 y = np.arange(int(-1*Ny/2),int(Ny/2)+1)
 Y,X = np.meshgrid(y,x)
 
-ii = np.where(X*X + Y*Y <= radius*radius)       #index matrix for coordinates of the wire 
+ii = np.where(X*X + Y*Y <= radius*radius)       #index matrix for coordinates of the wire
 phi[ii] = 1.0
 phi[1:-1,Ny-1] = 0.0        #setting bottom boundary to GND
 
